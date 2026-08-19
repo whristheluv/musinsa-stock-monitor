@@ -1,0 +1,55 @@
+name: 무신사 재입고 확인
+
+on:
+  schedule:
+    - cron: '2/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: musinsa-stock-monitor
+  cancel-in-progress: false
+
+jobs:
+  check-stock:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+
+    steps:
+      - name: 코드 받기
+        uses: actions/checkout@v4
+
+      - name: Node.js 준비
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 패키지 설치
+        run: npm install --omit=dev
+        env:
+          PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: '1'
+
+      - name: 재고 확인
+        run: npm run once
+        env:
+          PRODUCT_URL: https://www.musinsa.com/products/6990137
+          STATE_FILE: .github/stock-state.json
+          NOTIFY_ON_FIRST_AVAILABLE: 'false'
+          OPEN_OPTION_PANEL: 'true'
+          HEADLESS: 'true'
+          BROWSER_CHANNEL: chrome
+          WEBHOOK_KIND: discord
+          WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: 바뀐 재고 상태 저장
+        shell: bash
+        run: |
+          if [[ -n "$(git status --porcelain -- .github/stock-state.json)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -f .github/stock-state.json
+            git commit -m "chore: update stock state"
+            git push
+          fi
