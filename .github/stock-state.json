@@ -1,0 +1,30 @@
+{
+  "name": "굳코코 반팔 티셔츠",
+  "price": "39000원",
+  "status": "available",
+  "options": [
+    {
+      "label": "[object Object],[object Object]",
+      "available": true
+    },
+    {
+      "label": "구매내역 실측 선택하기",
+      "available": true
+    },
+    {
+      "label": "기준표 사이즈",
+      "available": true
+    },
+    {
+      "label": "실측 사이즈",
+      "available": true
+    },
+    {
+      "label": "실측 직접 입력하기",
+      "available": true
+    }
+  ],
+  "checkedAt": "2026-08-19T09:28:35.894Z",
+  "url": "https://www.musinsa.com/products/6990137",
+  "fingerprint": "78d52345efd7a547e491e4fcb2ca7fae8ae9f23a6bce8457afdb5ce85ef1a710"
+}
