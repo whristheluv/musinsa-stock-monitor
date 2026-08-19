@@ -1,0 +1,14 @@
+services:
+  musinsa-stock-monitor:
+    build: .
+    container_name: musinsa-stock-monitor
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      STATE_FILE: /data/state.json
+    volumes:
+      - musinsa-stock-state:/data
+
+volumes:
+  musinsa-stock-state:

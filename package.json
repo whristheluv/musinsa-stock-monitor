@@ -1,0 +1,20 @@
+{
+  "name": "musinsa-stock-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "무신사 상품의 재입고 상태를 확인하고 알림을 보냅니다.",
+  "scripts": {
+    "start": "node monitor.mjs",
+    "once": "node monitor.mjs --once",
+    "test-notify": "node monitor.mjs --test-notify",
+    "check": "node --check monitor.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "playwright": "^1.55.0"
+  }
+}
