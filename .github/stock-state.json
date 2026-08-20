@@ -8,27 +8,19 @@
       "available": true
     },
     {
+      "label": "구매내역 실측 선택하기",
+      "available": true
+    },
+    {
       "label": "기준표 사이즈",
       "available": true
     },
     {
-      "label": "남성 의류",
+      "label": "실측 사이즈",
       "available": true
     },
     {
-      "label": "신발 아동",
-      "available": true
-    },
-    {
-      "label": "신발 일반",
-      "available": true
-    },
-    {
-      "label": "아동 의류",
-      "available": true
-    },
-    {
-      "label": "여성 의류",
+      "label": "실측 직접 입력하기",
       "available": true
     },
     {
@@ -36,7 +28,7 @@
       "available": true
     }
   ],
-  "checkedAt": "2026-08-20T19:11:16.489Z",
+  "checkedAt": "2026-08-20T19:47:36.021Z",
   "url": "https://www.musinsa.com/products/6990137",
-  "fingerprint": "ef18113eedcb6a2c6ae48d7c891f60fe3c8f6b9a67bdc006fffbd2b9c8dd8b9e"
+  "fingerprint": "c721f537dee3ded545a9fe660990edeed028ef8210ad70635f3c692c82d64468"
 }
