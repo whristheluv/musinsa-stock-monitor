@@ -22,9 +22,13 @@
     {
       "label": "실측 직접 입력하기",
       "available": true
+    },
+    {
+      "label": "페이지 공유하기",
+      "available": true
     }
   ],
-  "checkedAt": "2026-08-19T20:37:38.540Z",
+  "checkedAt": "2026-08-20T02:35:58.011Z",
   "url": "https://www.musinsa.com/products/6990137",
-  "fingerprint": "78d52345efd7a547e491e4fcb2ca7fae8ae9f23a6bce8457afdb5ce85ef1a710"
+  "fingerprint": "c721f537dee3ded545a9fe660990edeed028ef8210ad70635f3c692c82d64468"
 }
