@@ -26,9 +26,13 @@
     {
       "label": "페이지 공유하기",
       "available": true
+    },
+    {
+      "label": "true",
+      "available": true
     }
   ],
-  "checkedAt": "2026-08-20T19:47:36.021Z",
+  "checkedAt": "2026-08-24T02:10:18.427Z",
   "url": "https://www.musinsa.com/products/6990137",
-  "fingerprint": "c721f537dee3ded545a9fe660990edeed028ef8210ad70635f3c692c82d64468"
+  "fingerprint": "cbdf972909aa307e80cf022954a3de1eb7f209b1a2ce868271a76c3ddc930cfe"
 }
