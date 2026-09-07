@@ -12,14 +12,6 @@
       "available": true
     },
     {
-      "label": "기준표 사이즈",
-      "available": true
-    },
-    {
-      "label": "실측 사이즈",
-      "available": true
-    },
-    {
       "label": "실측 직접 입력하기",
       "available": true
     },
@@ -32,7 +24,7 @@
       "available": false
     }
   ],
-  "checkedAt": "2026-09-06T09:36:58.090Z",
+  "checkedAt": "2026-09-07T09:50:05.127Z",
   "url": "https://www.musinsa.com/products/6990137",
-  "fingerprint": "3fcb78dc84bf5dcd9ad7f7fa08ecb165f33481409b3a99d380c87d64838fec63"
+  "fingerprint": "068da88a66377bf960412b7f0b72ab0d4d6fc751e603c914e719d7d1ad69dacc"
 }
