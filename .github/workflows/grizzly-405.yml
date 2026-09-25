@@ -16,7 +16,7 @@ jobs:
       - name: Check provider stock and send Discord alert
         env:
           GRIZZLY_API_KEY: ${{ secrets.GRIZZLY_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.GRIZZLY_DISCORD_WEBHOOK_URL }}
         run: python3 grizzly_405/check.py
       - name: Save availability state
         run: |
