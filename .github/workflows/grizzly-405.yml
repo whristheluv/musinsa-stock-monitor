@@ -1,5 +1,8 @@
 name: Grizzly provider 405 stock
 on:
+  push:
+    paths:
+      - '.github/workflows/grizzly-405.yml'
   schedule:
     - cron: '3-58/5 * * * *'
   workflow_dispatch:
