@@ -32,15 +32,11 @@
       "available": true
     },
     {
-      "label": "false",
-      "available": false
-    },
-    {
       "label": "true",
       "available": false
     }
   ],
-  "checkedAt": "2026-11-17T11:11:30.865Z",
+  "checkedAt": "2026-11-19T08:28:28.461Z",
   "url": "https://www.musinsa.com/products/6990137",
-  "fingerprint": "815ace8b5d0a76cb351b4a59b7fe69bf50878f48e311112a045e591e7144fec7"
+  "fingerprint": "a7614b2525051ab93baf755b956cc24134a67223ed2ee7938b3d610b1065a0aa"
 }
